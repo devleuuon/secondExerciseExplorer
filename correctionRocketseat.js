@@ -1,33 +1,33 @@
-let listaDeEstudantes = [
+let students = [
     {
-        nomeDoEstudante: 'Murilo',
-        primeiraNota: 6,
-        segundaNota: 9,
+        name: 'Murilo',
+        firstNote: 6,
+        secondNote: 9,
     },
 
     {
-        nomeDoEstudante: 'Ana',
-        primeiraNota: 5,
-        segundaNota: 3,
+        name: 'Ana',
+        firstNote: 5,
+        secondNote: 3,
     },
 
     {
-        nomeDoEstudante: 'Sara',
-        primeiraNota: 8,
-        segundaNota: 8,
+        name: 'Sara',
+        firstNote: 8,
+        secondNote: 8,
     }        
 ]
 
-function calculaMedia(primeiraNota,segundaNota) {
-let media = (primeiraNota + segundaNota) / 2
-return media
+function calculate(firstNote,secondNote) {
+let result = (firstNote + secondNote) / 2
+return result
 }
    
 
-for(let estudante of listaDeEstudantes){
-    mediaIndividual = calculaMedia(estudante.primeiraNota, estudante.segundaNota)
-    let aprovadoOuNao = mediaIndividual < 7 ? 'Infelizmente não foi dessa vez. Estude mais' : 'Parabéns pela sua aprovação'
+for(let student of students){
+    Average = calculate(student.firstNote, student.secondNote)
+    let approval = Average < 7 ? 'Infelizmente não foi dessa vez. Estude mais' : 'Parabéns pela sua aprovação'
 
-    alert(`A média de ${estudante.nomeDoEstudante} é ${mediaIndividual}.
-${aprovadoOuNao}`)
+    alert(`A média de ${student.name} é ${Average}.
+${approval}`)
 }   
